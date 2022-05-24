@@ -1,8 +1,10 @@
-# qb-drugdealing
+# n1ff.xyz-selldrugstonpc
+
 ## Description:
 
 QB-Target based drug selling system allowing players to sell drugs to any pedestrians on the street. Fully configurable with more options coming soon, qb-dispatch and linden_outlawalert support
 
+IMPORTANT: THIS USES QB-TARGET GLOBAL PEDS. IF YOU ARE USING BOXZONES OVER PEDS IT WILL OVERWRITE IT, I WILL NOT BE GIVING SUPPORT FOR INCOMPENTENT DEVELOPERS
 
 
 ## Features:
@@ -13,12 +15,10 @@ QB-Target based drug selling system allowing players to sell drugs to any pedest
 - Allows for unlimited drug types.
 - Configurable prices and amount sold.
 - Configurable alert notifications.
-- Runs at 0.00 ms idle and in use except when listening for keypress
+- Runs at 0.00 ms idle
 
 ## Dependencies:
 [QB-Target](https://github.com/BerkieBb/qb-target)
-
-[qb-lock](https://github.com/Nathan-FiveM/qb-lock)
 
 ## Installation:
 Under qb-target/init.lua look for Config.GlobalPedOptions and add the code below :)
@@ -35,10 +35,4 @@ Config.GlobalPedOptions = {
 	distance = 5,
 }
 ```
-For the moneywash minigame
-```
-	['acetone'] 			 = {['name'] = 'acetone', 				['label'] = 'Acetone', 	 			['weight'] = 500, 		['type'] = 'item', 		['image'] = 'REPLACE.png', 		['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Acetone used for things...'},
-	['primer'] 			 = {['name'] = 'primer', 				['label'] = 'Ink Primer', 	 			['weight'] = 500, 		['type'] = 'item', 		['image'] = 'REPLACE.png', 		['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Primes the ink for  the final product ;)'},
 
-
-```
